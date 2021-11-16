@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">SuperHeroes</string>
+    <string name="btn_search_label">Search</string>
+    <string name="search_hint">Superhero/Villain name</string>
+    <string name="title">SuperHero Search</string>
+    <string name="place_holder_name">Name</string>
+    <string name="fake_id">ID:0945</string>
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintVertical_bias="0"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baby_spider"
+            android:scaleType="centerCrop"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.96" />
+
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline5"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@id/cardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/superheroName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintVertical_bias=".005"
+                android:textSize="22sp"
+                android:layout_gravity="center"
+                android:text="Hero/Villain Name"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline5"
+                app:layout_constraintStart_toStartOf="@+id/guideline4"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:text="Full name"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_full_name"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:text="Birth Place"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_birthplace"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:text="First Appearance"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_appearance"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:text="Publisher"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_publisher"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:text="Alter egos"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_alter_egos"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:text="Aliases"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt_aliases"
+                    android:layout_width="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
