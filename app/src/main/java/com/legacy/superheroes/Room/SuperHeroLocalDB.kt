@@ -7,7 +7,7 @@ import com.legacy.superheroes.Model.Image
 import com.legacy.superheroes.Model.Result
 import com.legacy.superheroes.Model.SuperHeroModel
 
-@Database(entities = [Biography::class, Image::class, Result::class,SuperHeroModel::class], version = 1)
+@Database(entities = [SuperHeroModel::class], version = 1)
 abstract class SuperHeroLocalDB : RoomDatabase() {
 
     abstract fun daoAccess() : DAO
